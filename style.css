@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #00c7b6;
+}
+
+.main {
+    position: relative;
+    height: 500px;
+    width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+.main .left-side {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.main .left-side img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(.9);
+}
+
+.main .right-side {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.main .right-side h1 {
+    margin: 55px 0 40px;
+}
+
+form .form-group input[type="password"] {
+    margin: 0 21px 10px 0;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    background: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    padding-left: 45px;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+form .form-group i {
+    transform: translateX(35px);
+}
+
+form .form-group input[type="checkbox"] {
+    margin: 0 0 30px -170px;
+}
+
+form .form-group label {
+    color: #575757;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form button {
+    cursor: pointer;
+    background: #1a99ee;
+    color: #f1f1f1;
+    width: 300px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+form button:hover {
+    background: #198edb;
+}
+
+.login-with p {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.login-with i {
+    cursor: pointer;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 10px 2px 0;
+}
+
+.login-with .fa-facebook-f {
+    background: #3b5998;
+}
+
+.login-with .fa-instagram {
+    background: #e1306c;
+}
+
+.login-with .fa-twitter {
+    background: #1d9ff0;
+}
+
+@media (max-width: 810px) {
+
+    .main {
+        width: 400px;
+    }
+
+    .main .right-side {
+        width: 100%;
+        background: #ffffffdc;
+    }
+
+    .main .left-side {
+        width: 100%;
+        filter: brightness(1);
+    }
+
+    form .form-group input[type="password"] {
+        background: #d4d4d4;
+        border: 1px solid #d4d4d4;
+    }
+
+}
